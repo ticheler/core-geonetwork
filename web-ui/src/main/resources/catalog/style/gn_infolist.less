@@ -1,6 +1,7 @@
 // Color variables
 @import "../lib/style/bootstrap/less/variables.less";
 @cardtext: @gray-dark;
+@color1: #ffffff;
 @cardbackground: @gray-light;
 
 // Width variables 
@@ -10,7 +11,8 @@
 @height4: 100%; 
 
 .quickresultcard {
-
+  background-color: @color1;
+  background: @color1;
   border-radius: 4px;
   border: 1px solid #dddddd;
   cursor: pointer;
@@ -96,9 +98,9 @@
       text-align: center;
     }
     .content-card {
-
+      color: @color1;
       font-weight: 300;
-      height:10%;
+      height: 1@height8;
       margin-left: 5%;
       visibility: hidden;
       span {
@@ -120,6 +122,7 @@
   }
   .back {
     backface-visibility: hidden;
+    background: @color1;
     position: absolute;
     width: @width3;
   }
@@ -163,7 +166,7 @@
         visibility: hidden;
       }
       .gn-md-thumbnail {
-        height: 0%;
+        height: @height1;
         left: 0%;
         margin: 0;
         position: absolute;
@@ -171,7 +174,7 @@
         width: 5%;
         z-index: 100;
         img {
-          max-height: 0%;
+          max-height: @height8;
           max-width: 0%;
         }
       }
@@ -180,7 +183,7 @@
 }
 .front {
   .gn-md-thumbnail {
-    height: 70%;
+    height: 7@height8;
     left: 4%;
     margin: 0;
     position: absolute;
