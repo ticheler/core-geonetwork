@@ -355,10 +355,10 @@
         // Add current language labels if not set in keywords
         if (!$scope.keywordSelected.value['#text']) {
           $scope.keywordSelected.value['#text'] = '';
-        };
+        }
         if (!$scope.keywordSelected.definition['#text']) {
           $scope.keywordSelected.definition['#text'] = '';
-        };
+        }
         selectedKeywordOldId = k.uri;
         creatingKeyword = false;
         $('#keywordModal').modal();
@@ -373,7 +373,7 @@
         $scope.keywordSuggestedUri = '';
         $scope.keywordSelected = {
           'uri': $scope.thesaurusSelected.defaultNamespace + '#' +
-            gnUtilityService.randomUuid(),
+              gnUtilityService.randomUuid(),
           'value': {'@language': $scope.lang, '#text': ''},
           'definition': {'@language': $scope.lang, '#text': ''},
           'defaultLang': $scope.lang
